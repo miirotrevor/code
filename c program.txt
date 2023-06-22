@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    // declaring the variables.
+    char letter;
+    
+    printf("Please enter a letter: ");
+    scanf(" %c", &letter); // Added a space before %c to skip any leading whitespace characters
+    
+    // introducing condition statements (switch statements).
+    switch (letter) {
+        case 'a': // Enclosed the cases in single quotes to represent character literals
+        case 'A':
+            printf("a is a vowel\n");
+            break;
+        case 'e':
+        case 'E':
+            printf("e is a vowel\n");
+            break;
+        case 'i':
+        case 'I':
+            printf("i is a vowel\n");
+            break;
+        case 'o':
+        case 'O':
+            printf("o is a vowel\n");
+            break;
+        case 'u':
+        case 'U':
+            printf("u is a vowel\n");
+            break;
+        default:
+            printf("It's a consonant.\n"); // Added a newline character at the end
+    }
+
+    return 0;
+}
